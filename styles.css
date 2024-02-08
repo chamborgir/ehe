@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edc2c1;
+}
+
+#audio-controls {
+  display: none;
+}
+
+.text1 {
+  text-align: center;
+  margin-top: 50px; /* Adjust as needed */
+  font-size: 24px;
+  color: #333; /* Adjust color as needed */
+  font-family: cursive;
+}
+.text2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333; /* Adjust color as needed */
+  font-family: cursive;
+}
+
+.container {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.tulip {
+  width: 10px;
+  height: 400px;
+  margin: 30px 100px;
+  float: left;
+}
+
+.tulip,
+.stem,
+.stemLeaf,
+.tulipHead,
+.tulipLeaf,
+.tulipHair,
+.tulipEyes,
+.tulipSmile,
+.tulipBlush {
+  position: absolute;
+}
+
+.stem {
+  height: 200px;
+  width: 10px;
+  border-radius: 50px;
+  background-color: #25af59; /* Stem color unchanged */
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.stemLeaf {
+  background-color: #139a3e; /* Stem leaf color unchanged */
+  width: 60px;
+  height: 60px;
+}
+
+.leaf {
+  border-radius: 90% 0 90% 0;
+}
+
+.rightStemLeaf {
+  top: 60%;
+  width: 100px;
+  transform: rotate(-10deg);
+  left: -1px;
+}
+
+.leftStemLeaf {
+  top: 20%;
+  width: 80px;
+  transform: rotate(90deg);
+  left: -63px;
+  z-index: -2;
+}
+
+.tulipHead {
+  top: -159px;
+  left: -102px;
+  background-color: #f5e57f; /* Change tulip head color to a different shade of yellow */
+  width: 200px;
+  height: 165px;
+  border-radius: 0 0 50% 50%;
+  z-index: 0;
+  transform: rotate(-11deg);
+}
+
+.tulipLeaf {
+  background-color: #f6db53; /* Change tulip leaf color to a different shade of yellow */
+  width: 40px;
+  height: 40px;
+  z-index: -1;
+}
+
+.rightTulipLeaf {
+  transform: rotate(90deg);
+  left: 4px;
+}
+
+.leftTulipLeaf {
+  left: -33px;
+}
+
+.tulipHair {
+  width: 0;
+  height: 0;
+  top: -60px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid #f5e57f;
+}
+
+.lightTulip {
+  border-bottom: 60px solid #f5e57f;
+}
+
+.darkTulip {
+  border-bottom: 60px solid #f6db53;
+  border-bottom: 32px solid #f6db53;
+  top: -32px;
+  z-index: -1;
+}
+
+.darkTulip-1 {
+  left: 30px;
+}
+
+.darkTulip-2 {
+  left: 110.7px;
+}
+
+.lightTulip-1 {
+  transform: rotate(-27deg);
+  top: -43px;
+  left: -17px;
+}
+
+.lightTulip-2 {
+  left: 70px;
+}
+
+.lightTulip-3 {
+  transform: rotate(27deg);
+  top: -43px;
+  left: 156px;
+}
+
+.tulipEyes {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #222;
+  top: 55px;
+}
+
+.leftEye {
+  left: 69px;
+}
+
+.rightEye {
+  left: 119px;
+}
+
+.tulipSmile {
+  width: 37px;
+  height: 18.5px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 5px solid #222;
+  transform: rotate(180deg);
+  top: 73px;
+  left: 81px;
+  border-bottom: 0;
+}
+
+.tulipBlush {
+  border-radius: 50%;
+  background-color: #ff8081;
+  width: 30px;
+  height: 30px;
+}
+
+.leftBlush {
+  top: 66px;
+  left: 44px;
+}
+
+.rightBlush {
+  top: 66px;
+  left: 123px;
+}
